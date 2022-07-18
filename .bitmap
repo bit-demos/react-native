@@ -10,53 +10,16 @@
 
 {
     "envs/my-react-native": {
-        "scope": "",
-        "version": "",
-        "defaultScope": "learn-bit-react.react-native",
+        "scope": "learn-bit-react.react-native",
+        "version": "0.0.1",
         "mainFile": "index.ts",
-        "rootDir": "demo/envs/my-react",
-        "config": {
-            "teambit.envs/envs": {
-                "env": "teambit.envs/env"
-            },
-            "teambit.envs/env": {},
-            "teambit.dependencies/dependency-resolver": {},
-            "teambit.component/dev-files": {},
-            "teambit.compositions/compositions": {},
-            "teambit.docs/docs": {},
-            "teambit.pipelines/builder": {},
-            "teambit.compilation/compiler": {},
-            "teambit.component/forking": {
-                "forkedFrom": {
-                    "scope": "teambit.react",
-                    "name": "templates/react-native/envs/my-react-native",
-                    "version": "0.0.2"
-                }
-            }
-        }
+        "rootDir": "demo/envs/my-react"
     },
     "ui/ant-icon": {
-        "scope": "",
-        "version": "",
-        "defaultScope": "learn-bit-react.react-native",
+        "scope": "learn-bit-react.react-native",
+        "version": "0.0.1",
         "mainFile": "index.ts",
-        "rootDir": "demo/ui/ant-icon",
-        "config": {
-            "teambit.react/react-native": {},
-            "teambit.component/dev-files": {},
-            "teambit.compositions/compositions": {},
-            "teambit.docs/docs": {},
-            "teambit.envs/envs": {},
-            "teambit.dependencies/dependency-resolver": {},
-            "teambit.pipelines/builder": {},
-            "teambit.component/forking": {
-                "forkedFrom": {
-                    "scope": "teambit.react",
-                    "name": "templates/react-native/ui/text",
-                    "version": "0.0.1"
-                }
-            }
-        }
+        "rootDir": "demo/ui/ant-icon"
     },
     "$schema-version": "14.9.0"
 }
