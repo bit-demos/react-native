@@ -1,0 +1,27 @@
+---
+labels: ['label1', 'label2', 'label3']
+description: 'React Native component to display AntIcons'
+---
+
+import { AntIcon } from './ant-icon';
+
+## React Native Component for rendering AntIcons from react-native-vector-icons
+
+This component displays icons from the AntIcon set of react-native-vector-icons, with the following inputs to control the icon and it's styling:
+
+1. name - the name of the icon to render, from [this list](https://oblador.github.io/react-native-vector-icons/). Defaults to 'instagram'
+1. size - in pixels of the height and width of the icon (Default to 23)
+1. color - of the icon (default to red)
+
+
+### Component usage
+```js
+<AntIcon name="retweet" size={40} color="orange"/>
+```
+
+### Using props to customize the text
+
+Modify the text to see it change live:
+```js live
+<AntIcon name="retweet" size={40} color="orange" />
+```
