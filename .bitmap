@@ -21,5 +21,68 @@
         "mainFile": "index.ts",
         "rootDir": "demo/ui/ant-icon"
     },
-    "$schema-version": "14.9.0"
+    "file-content": {
+        "scope": "",
+        "version": "",
+        "mainFile": "index.ts",
+        "rootDir": "tasks-scope/file-content",
+        "config": {
+            "teambit.react/react": {},
+            "teambit.envs/envs": {
+                "env": "teambit.react/react"
+            }
+        }
+    },
+    "snack-aspect": {
+        "scope": "",
+        "version": "",
+        "mainFile": "index.ts",
+        "rootDir": "tasks-scope/snack-aspect",
+        "config": {
+            "teambit.harmony/aspect": {},
+            "teambit.envs/envs": {
+                "env": "teambit.harmony/aspect"
+            }
+        }
+    },
+    "ui/button": {
+        "scope": "",
+        "version": "",
+        "defaultScope": "my-org.tasks-scope",
+        "mainFile": "index.ts",
+        "rootDir": "tasks-scope/ui/button",
+        "config": {
+            "teambit.react/react-native": {},
+            "teambit.envs/envs": {
+                "env": "teambit.react/react-native"
+            }
+        }
+    },
+    "ui/text": {
+        "scope": "",
+        "version": "",
+        "defaultScope": "my-org.tasks-scope",
+        "mainFile": "index.ts",
+        "rootDir": "tasks-scope/ui/text",
+        "config": {
+            "teambit.react/templates/react-native/envs/my-react-native@0.0.1": {},
+            "teambit.component/dev-files": {},
+            "teambit.compositions/compositions": {},
+            "teambit.docs/docs": {},
+            "teambit.envs/envs": {
+                "env": "teambit.react/react-native"
+            },
+            "teambit.dependencies/dependency-resolver": {},
+            "teambit.pipelines/builder": {},
+            "teambit.component/forking": {
+                "forkedFrom": {
+                    "scope": "teambit.react",
+                    "name": "templates/react-native/ui/text",
+                    "version": "0.0.1"
+                }
+            },
+            "teambit.react/react-native": {}
+        }
+    },
+    "$schema-version": "15.0.0"
 }
