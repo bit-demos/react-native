@@ -10,7 +10,7 @@
     /**
      * the name of the component workspace. used for development purposes.
      **/
-    "name": "react-native-demo-repo",
+    "name": "tasks-workspace",
     /**
      * set the icon to be shown on the Bit server.
      **/
@@ -27,7 +27,7 @@
     /**
      * default scope for all components in workspace.
      **/
-    "defaultScope": "learn-bit-react.react-native"
+    "defaultScope": "learnbit-react.react-native"
   },
   /**
    * main configuration for component dependency resolution.
@@ -39,8 +39,13 @@
     "packageManager": "teambit.dependencies/yarn",
     "policy": {
       "dependencies": {
+        "@teambit/base-react.navigation.link": "2.0.27",
+        "@teambit/base-ui.surfaces.split-pane.split-pane": "1.0.0",
+        "@teambit/code.ui.queries.get-component-code": "0.0.499",
+        "@teambit/code.ui.queries.get-file-content": "0.0.501",
+        "@teambit/component-id": "0.0.425",
         "@teambit/eslint-config-bit-react": "~0.0.367",
-        "@teambit/harmony": "0.3.3",
+        "@teambit/ui.hooks.use-composition": "0.0.44",
         "@types/react-native": "0.66.9",
         "@typescript-eslint/eslint-plugin": "4.29.3",
         "eslint-import-resolver-node": "0.3.6",
@@ -49,18 +54,25 @@
         "eslint-plugin-jsx-a11y": "6.4.1",
         "eslint-plugin-mdx": "1.15.0",
         "eslint-plugin-react": "7.25.1",
+        "graphql": "16.6.0",
+        "lodash.head": "4.0.1",
+        "query-string": "7.0.0",
         "react-native-vector-icons": "9.2.0"
       },
       "peerDependencies": {
+        "@apollo/client": "3.6.5",
         "@testing-library/react-native": "9.0.0",
         "babel-jest": "27.4.5",
         "react": "17.0.2",
         "react-dom": "17.0.2",
         "react-native": "0.66.4",
+        "react-native-web": "^0.16.0",
         "react-test-renderer": "17.0.2"
       }
-    }
+    },
+    "linkCoreAspects": true
   },
+  "learnbit-react.react-native/snack-aspect": {},
   /**
    * workspace variants allow to set different subsets of configuration for components in your
    * workspace. this is extremely useful for upgrading, aligning and building components with a new
@@ -68,18 +80,5 @@
    * wrap the rule with curly brackets (e.g. `"{ui/*}": {}`)
    * see https://bit.dev/docs/workspace/variants for more info.
    **/
-  "teambit.workspace/variants": {
-    "{ui/**}, {pages/**}": {
-      // uses the custom env
-      "learn-bit-react.react-native/envs/my-react-native": {}
-      // uncomment the line below if you remove the custom env and remove the line above
-      // "teambit.react/react-native": {},
-    },
-    "{themes/**}": {
-      "teambit.react/react": {}
-    },
-    "{envs/**}, {extensions/**}": {
-      "teambit.envs/env": {}
-    }
-  }
+  "teambit.workspace/variants": {  }
 }
