@@ -1,0 +1,203 @@
+---
+description: "A typography component for theming."
+labels: ["typography", "css"]
+---
+A typography component that defines a standard set of font faces based on Zurich's design system.
+## Usage
+The classes for using typography styles are the following:
+##### Display
+<div
+  style={{
+    display: "grid",
+    gridTemplate: "30px 1fr / repeat(2, 1fr)",
+    padding: "2rem",
+    border: "1px solid var(--color-grayscale-medium-gray)",
+    borderRadius: "4px",
+    rowGap: "2rem",
+  }}
+>
+  <h3 style={{ margin: 0 }}>Regular</h3>
+  <h3 style={{ margin: 0 }}>Decorative</h3>
+  <p className="display">Display</p>
+  <p className="display-decorative">Display decorative</p>
+</div>
+<br />
+Use the classes `display` or `display-decorative`.  
+
+```js
+<p className="display">Display</p>
+```  
+
+```js
+<p className="display-decorative">Display</p>
+```
+
+##### Headings
+<div
+  style={{
+    display: "grid",
+    gridTemplate: "30px 1fr / repeat(2, 1fr)",
+    padding: "2rem",
+    border: "1px solid var(--color-grayscale-medium-gray)",
+    borderRadius: "4px",
+    rowGap: "2rem",
+  }}
+>
+  <h3 style={{ margin: 0 }}>Regular</h3>
+  <h3 style={{ margin: 0 }}>Decorative</h3>
+  <p className="h1">Heading 1</p>
+  <p className="h1-decorative">Heading 1 decorative</p>
+  <p className="h2">Heading 2</p>
+  <p className="h2-decorative">Heading 2 decorative</p>
+  <p className="h3">Heading 3</p>
+</div>
+<br />
+Use the classes `h1`, `h2`, `h3` or `h1-decorative`, `h2-decorative`.
+
+```js
+<h1 className="h1">Header 1</h1>
+```
+
+```js
+<h1 className="h1-decorative">Header 1 decorative</h1>
+```
+
+##### Highlight
+<div
+  style={{
+    display: "grid",
+    gridTemplate: "30px 1fr / 1fr",
+    padding: "2rem",
+    border: "1px solid var(--color-grayscale-medium-gray)",
+    borderRadius: "4px",
+    rowGap: "2rem",
+  }}
+>
+  <h3 style={{ margin: 0 }}>Regular</h3>
+  <p className="highlight">Highlight</p>
+</div>
+<br />
+Use the class `highlight`.
+
+```js
+<p className="highlight">Highlight</p>
+```
+
+##### Body
+<div
+  style={{
+    display: "grid",
+    gridTemplate: "30px 1fr / repeat(2, 1fr)",
+    padding: "2rem",
+    border: "1px solid var(--color-grayscale-medium-gray)",
+    borderRadius: "4px",
+    rowGap: "2rem",
+  }}
+>
+  <h3 style={{ margin: 0 }}>Regular</h3>
+  <h3 style={{ margin: 0 }}>Medium</h3>
+  <p className="body-lg-r">Body Large Regular</p>
+  <p className="body-lg-m">Body Large Medium</p>
+  <p className="body-sm-r">Body Small Regular</p>
+  <p className="body-sm-m">Body Small Medium</p>
+</div>
+<br />
+
+The structure of this classes is {`body-\{size}-{weight}`}
+**Size**: Large `lg` or small `sm`
+**Weight**: Regular `r` or medium `m`
+
+```js
+<p className="body-lg-r">Body Large Regular</p>
+```
+
+```js
+<p className="body-lg-m">Body Large Medium</p>
+```
+
+```js
+<p className="body-sm-r">Body Small Regular</p>
+```
+
+```js
+<p className="body-sm-m">Body Small Medium</p>
+```
+
+##### Captions
+<div
+  style={{
+    display: "grid",
+    gridTemplate: "30px 1fr / repeat(2, 1fr)",
+    padding: "2rem",
+    border: "1px solid var(--color-grayscale-medium-gray)",
+    borderRadius: "4px",
+    rowGap: "2rem",
+  }}
+>
+  <h3 style={{ margin: 0 }}>Regular</h3>
+  <h3 style={{ margin: 0 }}>Medium</h3>
+  <p className="caption-lg-r">Caption Large Regular</p>
+  <p className="caption-lg-m">Caption Large Medium</p>
+  <p className="caption-sm-r">Caption Small Regular</p>
+  <p className="caption-sm-m">Caption Small Medium</p>
+</div>
+<br />
+The structure of this classes is {`caption-{size}-{weight}`}
+**Size**: Large `lg` or small `sm`
+**Weight**: Regular `r` or medium `m`
+```js
+<p className="caption-lg-r">Caption Large Regular</p>
+```
+```js
+<p className="caption-lg-m">Caption Large Medium</p>
+```
+```js
+<p className="caption-sm-r">Caption Small Regular</p>
+```
+```js
+<p className="caption-sm-m">Caption Small Medium</p>
+```
+## Playground
+```js live
+<div
+  style={{
+    padding: "2rem",
+    border: "1px solid var(--color-grayscale-medium-gray)",
+    margin: "2rem",
+  }}
+>
+  <h1 className="h1-decorative">Heading 1 - Decorative</h1>
+  <hr />
+  <br />
+  <h3>Heading 3</h3>
+  <p className="body-sm-r">
+    Body small regular - sunt sunt qui ad deserunt Duis aliquip culpa dolor
+    occaecat sed ipsum ipsum mollit est dolor officia commodo sunt adipiscing
+    sint dolore deserunt adipiscing est adipiscing minim ipsum exercitation
+    irure voluptate sed pariatur enim tempor enim velit.
+  </p>
+  <br />
+  <p className="caption-sm-r">
+    This is a small caption - sunt sunt qui ad deserunt Duis aliquip culpa
+  </p>
+</div>
+```
+## Usage example
+<div
+  style={{
+    background: "var(--color-primary-data-light-blue)",
+    borderRadius: "5px",
+    width: "500px",
+    padding: "4rem",
+  }}
+>
+  <p className="display">Zurich</p>
+  <p className="display">
+    Startup <span className="display-decorative">since 1872</span>
+  </p>
+  <br />
+  <p className="body-lg-r">
+    How have we thrived for 150 years? Dig into our vibrant history to find out
+    what drives us forward.
+  </p>
+</div>
